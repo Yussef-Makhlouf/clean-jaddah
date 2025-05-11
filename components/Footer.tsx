@@ -58,10 +58,10 @@ export default function Footer() {
           <div className="backdrop-blur-sm bg-white/5 rounded-2xl p-6 space-y-4">
             <h4 className="text-xl font-semibold text-white">تابعنا</h4>
             <div className="flex gap-4">
-              {[Facebook, Twitter, Instagram].map((Icon, index) => (
+              {[Facebook].map((Icon, index) => (
                 <a
                   key={index}
-                  href="#"
+                  href="https://www.facebook.com/profile.php?id=61574108861445"
                   className="bg-white/10 p-3 rounded-full hover:bg-white/20 transition-all duration-300 hover:scale-110"
                 >
                   <Icon className="w-5 h-5 text-blue-100" />

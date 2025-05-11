@@ -43,7 +43,7 @@ export default function Pricing() {
                 ))}
               </ul>
               <a 
-                href="#contact" 
+                href="https://wa.me/966563009155" 
                 className={`block w-full text-center ${pkg.buttonColor} text-white py-3 px-6 rounded-full text-lg font-semibold transition duration-300`}
               >
                 احجز الآن
