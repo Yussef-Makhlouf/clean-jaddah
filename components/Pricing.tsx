@@ -1,3 +1,5 @@
+'use client';
+
 import { Check } from 'lucide-react'
 
 export default function Pricing() {
@@ -43,7 +45,7 @@ export default function Pricing() {
                 ))}
               </ul>
               <a 
-                href="https://wa.me/966563009155" 
+                href="https://wa.me/966565265233" 
                 className={`block w-full text-center ${pkg.buttonColor} text-white py-3 px-6 rounded-full text-lg font-semibold transition duration-300`}
               >
                 احجز الآن

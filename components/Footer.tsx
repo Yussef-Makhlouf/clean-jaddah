@@ -1,4 +1,6 @@
-import { Facebook, Twitter, Instagram, Phone, Mail, MapPin } from 'lucide-react'
+'use client';
+
+import { Facebook, Mail, Phone, MapPin } from 'lucide-react'
 
 export default function Footer() {
   return (
@@ -38,8 +40,8 @@ export default function Footer() {
             <h4 className="text-xl font-semibold text-white">معلومات التواصل</h4>
             <div className="space-y-4">
               {[
-                { icon: <Phone className="w-5 h-5" />, text: '0123456789', href: 'tel:0123456789' },
-                { icon: <Mail className="w-5 h-5" />, text: 'info@example.com', href: 'mailto:info@example.com' },
+                { icon: <Phone className="w-5 h-5" />, text: '0565265233', href: 'tel:0565265233' },
+                { icon: <Mail className="w-5 h-5" />, text: 'info@cleanwithfresh.com', href: 'mailto:info@cleanwithfresh.com' },
                 { icon: <MapPin className="w-5 h-5" />, text: 'المدينة، الشارع الرئيسي' }
               ].map((item, index) => (
                 <div key={index} className="flex items-center gap-3 text-blue-100">

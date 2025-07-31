@@ -1,14 +1,11 @@
-import { NextSeo } from 'next-seo';
+'use client';
+
 import Link from 'next/link';
 
 export default function NotFound() {
   return (
     <>
-      <NextSeo
-        title="404 - الصفحة غير موجودة | شركة النظافة المثالية"
-        description="عذراً، الصفحة التي تبحث عنها غير موجودة. يرجى العودة إلى الصفحة الرئيسية."
-        noindex={true}
-      />
+
       <div className="flex flex-col items-center justify-center min-h-screen text-center px-4">
         <h1 className="text-6xl font-bold mb-4">404</h1>
         <h2 className="text-2xl mb-6">عذراً، الصفحة التي تبحث عنها غير موجودة</h2>

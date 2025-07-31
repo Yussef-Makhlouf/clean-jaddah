@@ -3,10 +3,10 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { getBlogPosts } from '@/lib/blog-utils';
+import { getAllBlogPosts } from '@/lib/blog-utils';
 
 const LatestBlogPosts = () => {
-  const blogPosts = getBlogPosts().slice(0, 3); // Get only the 3 most recent posts
+  const blogPosts = getAllBlogPosts().slice(0, 3); // Get only the 3 most recent posts
 
   return (
     <section className="py-16 bg-blue-50">

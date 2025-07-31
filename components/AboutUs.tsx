@@ -1,3 +1,5 @@
+'use client';
+
 import Image from 'next/image';
 import { CheckCircle, Users, Trophy, Clock } from 'lucide-react';
 

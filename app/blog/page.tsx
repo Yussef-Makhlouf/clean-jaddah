@@ -3,73 +3,15 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { getBlogPosts } from '@/lib/blog-utils';
-import PageSeo from '@/components/seo/PageSeo';
-import StructuredData from '@/components/seo/StructuredData';
-import Footer from '@/components/Footer';
-
+import { getAllBlogPosts } from '@/lib/blog-utils';
 
 // Blog listing page component
 export default function BlogPage() {
-  const blogPosts = getBlogPosts();
+  const blogPosts = getAllBlogPosts();
 
   return (
-    <div className="bg-gray-50 min-h-screen">
-      <nav className="bg-white shadow-md">
-        <div className="container mx-auto px-6 py-3">
-          <div className="flex items-center justify-between">
-            <Link href="/">
-              <Link href="/" className="text-2xl font-bold text-gray-800">النظافة المثالية</Link>
-            </Link>
-            <div className="flex items-center">
-           
-                <button className='bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-6 rounded-full transition duration-300 shadow-md hover:shadow-lg'>
-                <Link href="tel:0563009155" className="px-3 py-2 mx-2 text-white hover:text-gray-900">اتصل بنا</Link>
-                </button>
- 
-            </div>
-          </div>
-        </div>
-      </nav>
+    <div>
 
-      <PageSeo 
-        title="مدونة شركة النظافة المثالية - نصائح ومقالات عن التنظيف"
-        description="اقرأ أحدث المقالات والنصائح حول التنظيف المنزلي والمكتبي من خبراء شركة النظافة المثالية"
-        canonical="/blog"
-        openGraph={{
-          title: 'مدونة شركة النظافة المثالية - نصائح ومقالات عن التنظيف',
-          description: 'اقرأ أحدث المقالات والنصائح حول التنظيف المنزلي والمكتبي من خبراء شركة النظافة المثالية',
-          url: 'https://cleanwithfresh.com/blog',
-          type: 'website',
-          images: [
-            {
-              url: 'https://cleanwithfresh.com/images/blog-header.jpg',
-              width: 1200,
-              height: 630,
-              alt: 'مدونة شركة النظافة المثالية',
-            },
-          ],
-        }}
-      />
-      
-      <StructuredData
-        type="WebPage"
-        data={{
-          '@context': 'https://schema.org',
-          '@type': 'WebPage',
-          name: 'مدونة شركة النظافة المثالية',
-          description: 'اقرأ أحدث المقالات والنصائح حول التنظيف المنزلي والمكتبي من خبراء شركة النظافة المثالية',
-          publisher: {
-            '@type': 'Organization',
-            name: 'شركة النظافة المثالية',
-            logo: {
-              '@type': 'ImageObject',
-              url: 'https://cleanwithfresh.com/logo.png',
-            },
-          },
-        }}
-      />
-      
       {/* Hero Section */}
       <div className="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-20 relative overflow-hidden">
         <div className="absolute inset-0 opacity-20">
@@ -198,47 +140,26 @@ export default function BlogPage() {
       <div className="bg-blue-50 py-16">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold mb-10 text-center">تصفح حسب الفئة</h2>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-            <div className="bg-white rounded-xl shadow-md p-6 text-center hover:shadow-lg transition-shadow cursor-pointer">
-              <div className="bg-blue-100 text-blue-600 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
-                </svg>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {[
+              { name: 'تنظيف المنازل', count: 12, color: 'bg-green-500' },
+              { name: 'تنظيف المكاتب', count: 8, color: 'bg-blue-500' },
+              { name: 'نصائح التنظيف', count: 15, color: 'bg-purple-500' },
+              { name: 'أدوات التنظيف', count: 6, color: 'bg-orange-500' },
+            ].map((category, index) => (
+              <div key={index} className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow duration-300">
+                <div className={`w-12 h-12 ${category.color} rounded-lg mb-4 flex items-center justify-center`}>
+                  <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
+                  </svg>
+                </div>
+                <h3 className="text-lg font-bold mb-2">{category.name}</h3>
+                <p className="text-gray-600 text-sm">{category.count} مقال</p>
               </div>
-              <h3 className="font-bold text-lg mb-2">تنظيف منزلي</h3>
-              <p className="text-gray-600 text-sm">نصائح وإرشادات لتنظيف المنزل</p>
-            </div>
-            <div className="bg-white rounded-xl shadow-md p-6 text-center hover:shadow-lg transition-shadow cursor-pointer">
-              <div className="bg-green-100 text-green-600 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
-                </svg>
-              </div>
-              <h3 className="font-bold text-lg mb-2">تنظيف صديق للبيئة</h3>
-              <p className="text-gray-600 text-sm">منتجات وطرق تنظيف صديقة للبيئة</p>
-            </div>
-            <div className="bg-white rounded-xl shadow-md p-6 text-center hover:shadow-lg transition-shadow cursor-pointer">
-              <div className="bg-purple-100 text-purple-600 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
-                </svg>
-              </div>
-              <h3 className="font-bold text-lg mb-2">تنظيف مكاتب</h3>
-              <p className="text-gray-600 text-sm">خدمات تنظيف للشركات والمكاتب</p>
-            </div>
-            <div className="bg-white rounded-xl shadow-md p-6 text-center hover:shadow-lg transition-shadow cursor-pointer">
-              <div className="bg-red-100 text-red-600 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
-                </svg>
-              </div>
-              <h3 className="font-bold text-lg mb-2">نصائح احترافية</h3>
-              <p className="text-gray-600 text-sm">نصائح من خبراء التنظيف المحترفين</p>
-            </div>
+            ))}
           </div>
         </div>
       </div>
-      <Footer />
     </div>
   );
 }

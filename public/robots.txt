@@ -1,11 +1,91 @@
-# robots.txt for Clean Jaddah
+# https://www.robotstxt.org/robotstxt.html
 User-agent: *
 Allow: /
 
-# Sitemaps
+# Sitemap
 Sitemap: https://cleanwithfresh.com/sitemap.xml
 
-# Disallow admin and private areas
+# الصفحات الأساسية - يجب أرشفتها
+Allow: /
+Allow: /services/
+Allow: /blog/
+
+# صفحات الخدمات الأساسية - يجب أرشفتها
+Allow: /services/home-cleaning/
+Allow: /services/office-cleaning/
+Allow: /services/carpet-cleaning/
+Allow: /services/window-cleaning/
+Allow: /services/post-construction/
+Allow: /services/disinfection/
+Allow: /services/implementation/
+
+# مقالات المدونة - يجب أرشفتها
+Allow: /blog/professional-cleaning-services-in-jeddah
+Allow: /blog/eco-friendly-cleaning-solutions
+Allow: /blog/spring-cleaning-tips
+Allow: /blog/home-disinfection
+Allow: /blog/jeddah-cleaning-services
+Allow: /blog/carpet-cleaning
+
+# منع أرشفة صفحات المحتوى المكرر
+# صفحات التصنيفات في المدونة (محتوى مكرر)
+Disallow: /blog/?category=home-cleaning
+Disallow: /blog/?category=office-cleaning
+Disallow: /blog/?category=general-tips
+Disallow: /blog/?category=carpet-cleaning
+Disallow: /blog/?category=window-cleaning
+Disallow: /blog/?category=disinfection
+
+# منع أرشفة صفحات البحث والفلترة
+Disallow: /blog/?search=
+Disallow: /blog/?tag=
+Disallow: /blog/?author=
+Disallow: /blog/?date=
+
+# منع أرشفة صفحات الإدارة والخاصة
 Disallow: /admin/
 Disallow: /private/
 Disallow: /api/
+Disallow: /_next/
+Disallow: /static/
+
+# منع أرشفة صفحات الأخطاء
+Disallow: /404
+Disallow: /500
+Disallow: /error
+
+# منع أرشفة صفحات التطوير
+Disallow: /dev/
+Disallow: /test/
+Disallow: /staging/
+
+# منع أرشفة ملفات الوسائط المباشرة
+Disallow: /*.pdf$
+Disallow: /*.doc$
+Disallow: /*.docx$
+Disallow: /*.xls$
+Disallow: /*.xlsx$
+Disallow: /*.ppt$
+Disallow: /*.pptx$
+
+# منع أرشفة ملفات النظام
+Disallow: /robots.txt
+Disallow: /sitemap.xml
+Disallow: /favicon.ico
+Disallow: /manifest.json
+
+# تأخير الزحف لتجنب إرهاق الخادم
+Crawl-delay: 1
+
+# توجيهات خاصة لمحركات البحث المختلفة
+User-agent: Googlebot
+Crawl-delay: 1
+
+User-agent: Bingbot
+Crawl-delay: 2
+
+User-agent: Slurp
+Crawl-delay: 2
+
+User-agent: DuckDuckBot
+Crawl-delay: 1

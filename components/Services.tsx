@@ -1,6 +1,6 @@
 "use client";
 
-import { Home, Building2, CarIcon as Carpet, AppWindowIcon as WindowIcon, HardHat, SprayCanIcon as Spray, CheckCircle, Clock, ArrowRight, BadgeCheck } from 'lucide-react'
+import { Home, Building2, CarIcon as Carpet, AppWindowIcon as WindowIcon, HardHat, SprayCanIcon as Spray, CheckCircle, Clock, ArrowRight } from 'lucide-react'
 import Link from 'next/link'
 
 const services = [
@@ -11,7 +11,8 @@ const services = [
     duration: '3-5 ساعات',
     price: 'تبدأ من 299 ريال',
     features: ['تنظيف جميع الغرف', 'تنظيف المطبخ والحمامات', 'تنظيف الأرضيات والسجاد', 'إزالة الغبار من الأثاث'],
-    popular: true
+    popular: true,
+    slug: '/services/home-cleaning'
   },
   {
     title: 'تنظيف المكاتب',
@@ -20,7 +21,8 @@ const services = [
     duration: '4-6 ساعات',
     price: 'تبدأ من 499 ريال',
     features: ['تنظيف المكاتب والمساحات المشتركة', 'تنظيف الزجاج والنوافذ', 'تنظيف المطابخ وغرف الاجتماعات', 'تعقيم الأسطح المشتركة'],
-    popular: false
+    popular: false,
+    slug: '/services/office-cleaning'
   },
   {
     title: 'تنظيف السجاد',
@@ -29,7 +31,8 @@ const services = [
     duration: '2-4 ساعات',
     price: 'تبدأ من 199 ريال',
     features: ['إزالة البقع الصعبة', 'تنظيف بالبخار', 'إزالة الروائح الكريهة', 'تجفيف سريع'],
-    popular: true
+    popular: true,
+    slug: '/services/carpet-cleaning'
   },
   {
     title: 'تنظيف النوافذ',
@@ -38,7 +41,8 @@ const services = [
     duration: '3-5 ساعات',
     price: 'تبدأ من 249 ريال',
     features: ['تنظيف النوافذ الداخلية والخارجية', 'تلميع الزجاج بدون خطوط', 'تنظيف الإطارات والمسارات', 'معدات متخصصة للأماكن المرتفعة'],
-    popular: false
+    popular: false,
+    slug: '/services/window-cleaning'
   },
   {
     title: 'تنظيف ما بعد البناء',
@@ -47,7 +51,8 @@ const services = [
     duration: 'يوم كامل',
     price: 'تبدأ من 899 ريال',
     features: ['إزالة بقايا الدهانات والغبار', 'تنظيف الأرضيات من مخلفات البناء', 'تنظيف النوافذ والأبواب', 'تنظيف المرافق الصحية'],
-    popular: false
+    popular: false,
+    slug: '/services/post-construction'
   },
   {
     title: 'تنظيف وتعقيم',
@@ -56,7 +61,8 @@ const services = [
     duration: '2-3 ساعات',
     price: 'تبدأ من 349 ريال',
     features: ['تعقيم الأسطح عالية اللمس', 'رش مبيدات آمنة للأطفال والحيوانات', 'تطهير الحمامات والمطابخ', 'استخدام مواد معتمدة صحياً'],
-    popular: true
+    popular: true,
+    slug: '/services/disinfection'
   },
 ]
 
@@ -107,9 +113,7 @@ export default function Services() {
                       <Clock className="w-4 h-4 ml-1 text-[#1976D2]" />
                       <span>{service.duration}</span>
                     </div>
-                    <div className="text-[#1976D2] font-bold">
-                      {service.price}
-                    </div>
+              
                   </div>
 
                   {/* Service features */}
@@ -131,25 +135,33 @@ export default function Services() {
 
                 {/* Call to action */}
                 <div className="flex space-x-2 space-x-reverse">
-                  <a
-                    href="tel:+966563009155"
+                  <Link
+                    href={service.slug}
                     className="flex-1 bg-[#1976D2] text-white py-3 rounded-xl flex items-center justify-center transition-all duration-300 hover:bg-[#1565C0] text-sm font-bold"
                   >
-                    <span className="ml-1">اتصل بنا </span>
+                    <span className="ml-1">تفاصيل أكثر</span>
                     <ArrowRight className="w-4 h-4" />
-                  </a>
-                  <Link
-                    href="https://wa.me/966563009155"
+                  </Link>
+                  <a
+                    href="tel:+966565265233"
                     className="flex-1 bg-white text-[#1976D2] border border-[#1976D2] py-3 rounded-xl flex items-center justify-center transition-all duration-300 hover:bg-blue-50 text-sm"
                   >
-                    تواصل واتساب                
-                      </Link>
+                    اتصل بنا
+                  </a>
                 </div>
               </div>
+
             )
           })}
+  
+
         </div>
       </div>
+      <div className="flex justify-center mt-10 mb-10 text-center bg-blue-500  text-white py-4 rounded-lg transition-all duration-300 font-bold w-fit px-10 mx-auto">
+            <Link href="/services" className="text-white  ">
+              المزيد من الخدمات
+            </Link>
+          </div>
     </section>
   )
 }

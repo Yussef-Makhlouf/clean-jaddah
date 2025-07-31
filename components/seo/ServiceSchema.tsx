@@ -1,57 +1,101 @@
-"use client";
-
-import React from 'react';
+import React from "react";
 
 interface ServiceSchemaProps {
-  serviceName: string;
-  description: string;
-  price?: string;
-  priceCurrency?: string;
-  imageUrl?: string;
+  serviceName?: string;
+  serviceType?: string;
+  description?: string;
   areaServed?: string;
-  serviceUrl?: string;
+  priceRange?: string;
+  availableHours?: string;
+  image?: string;
+  url?: string;
+  providerName?: string;
+  providerUrl?: string;
+  providerPhone?: string;
+  providerAddress?: object;
 }
+
+const defaultService = {
+  serviceName: "تنظيف المنازل",
+  serviceType: "CleaningService",
+  description: "خدمة شاملة لتنظيف جميع أنحاء منزلك بأعلى معايير الجودة والنظافة في جدة.",
+  areaServed: "جدة، المملكة العربية السعودية",
+  priceRange: "$$",
+  availableHours: "Mo-Su 08:00-20:00",
+  providerName: "شركة النظافة المثالية",
+  providerUrl: "https://cleanwithfresh.com",
+  providerPhone: "+966565265233",
+  providerAddress: {
+    "@type": "PostalAddress",
+    streetAddress: "شارع الأمير محمد بن عبد العزيز",
+    addressLocality: "جدة",
+    addressRegion: "المنطقة الشرقية",
+    postalCode: "32211",
+    addressCountry: "SA"
+  }
+};
 
 const ServiceSchema: React.FC<ServiceSchemaProps> = ({
   serviceName,
+  serviceType,
   description,
-  price,
-  priceCurrency = 'SAR',
-  imageUrl = 'https://cleanwithfresh.com/images/services/default.jpg',
-  areaServed = 'جدة',
-  serviceUrl,
+  areaServed,
+  priceRange,
+  availableHours,
+  image,
+  url,
+  providerName,
+  providerUrl,
+  providerPhone,
+  providerAddress,
 }) => {
   const schema = {
-    '@context': 'https://schema.org',
-    '@type': 'Service',
-    name: serviceName,
-    description: description,
-    provider: {
-      '@type': 'LocalBusiness',
-      name: 'شركة النظافة المثالية',
-      url: 'https://cleanwithfresh.com'
-    },
+    "@context": "https://schema.org",
+    "@type": "Service",
+    name: serviceName || defaultService.serviceName,
+    serviceType: serviceType || defaultService.serviceType,
+    description: description || defaultService.description,
     areaServed: {
-      '@type': 'City',
-      name: areaServed
+      "@type": "City",
+      name: areaServed || defaultService.areaServed
     },
-    image: imageUrl,
-    url: serviceUrl || `https://cleanwithfresh.com/services/${serviceName.toLowerCase().replace(/\s+/g, '-')}`,
-    ...(price && {
-      offers: {
-        '@type': 'Offer',
-        price: price,
-        priceCurrency: priceCurrency
+    priceRange: priceRange || defaultService.priceRange,
+    hoursAvailable: availableHours || defaultService.availableHours,
+    ...(image && { image: image }),
+    ...(url && { url: url }),
+    provider: {
+      "@type": "LocalBusiness",
+      "@id": providerUrl || defaultService.providerUrl,
+      name: providerName || defaultService.providerName,
+      url: providerUrl || defaultService.providerUrl,
+      telephone: providerPhone || defaultService.providerPhone,
+      address: providerAddress || defaultService.providerAddress,
+      geo: {
+        "@type": "GeoCoordinates",
+        latitude: "21.5433",
+        longitude: "39.1728"
+      },
+      openingHours: availableHours || defaultService.availableHours,
+      priceRange: priceRange || defaultService.priceRange
+    },
+    offers: {
+      "@type": "Offer",
+      priceCurrency: "SAR",
+      priceSpecification: {
+        "@type": "PriceSpecification",
+        priceCurrency: "SAR"
+      },
+      availability: "https://schema.org/InStock",
+      validFrom: new Date().toISOString(),
+      areaServed: {
+        "@type": "City",
+        name: areaServed || defaultService.areaServed
       }
-    })
+    }
   };
-
   return (
-    <script
-      type="application/ld+json"
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
-    />
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
   );
 };
 
-export default ServiceSchema;
+export default ServiceSchema; 

@@ -56,7 +56,7 @@ const services = [
   {
     title: 'تنظيف المطاعم والمطابخ',
     description: 'خدمات تنظيف متخصصة للمطاعم والمطابخ تلبي معايير النظافة والسلامة الغذائية',
-    image: '/images/blog/spring-cleaning.png',
+    image: '/images/blog/spring-cleaning-tips.jpg',
     price: 'تبدأ من 799 ريال',
     duration: '5-7 ساعات',
     rating: 4.8,
@@ -168,14 +168,14 @@ export default function FeaturedServices() {
                   
                   <div className="flex flex-col space-y-3">
                     <a 
-                      href="tel:+966563009155" 
+                      href="tel:+966565265233" 
                       className="w-full bg-[#1976D2] text-white py-3 rounded-xl flex items-center justify-center group-hover:bg-[#1565C0] transition-all duration-300 hover:shadow-lg transform hover:-translate-y-0.5"
                     >
                       <span className="font-semibold text-white ml-2">احجز الآن</span>
                       <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform text-white duration-300" />
                     </a>
                     <Link 
-                      href="https://wa.me/966563009155" 
+                      href="https://wa.me/966565265233" 
                       className="w-full bg-green-500 px-3 text-white border border-green-500 py-2 rounded-xl flex items-center justify-center transition-all duration-300 hover:bg-green-500 text-sm"
                     >
                        واتساب

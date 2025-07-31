@@ -5,32 +5,32 @@ import { X, ZoomIn } from 'lucide-react';
 
 const galleryImages = [
   {
-    src: '/Artboard 1.avif',
+    src: '/luxury-villa-cleaning.avif',
     title: 'تنظيف الفلل الفاخرة',
     category: 'تنظيف منازل'
   },
   {
-    src: '/Artboard 2.avif',
+    src: '/office-cleaning.avif',
     title: 'تنظيف المكاتب',
     category: 'تنظيف تجاري'
   },
   {
-    src: '/Artboard 3.avif',
+    src: '/carpet-cleaning-gallery.avif',
     title: 'تنظيف السجاد',
     category: 'تنظيف متخصص'
   },
   {
-    src: '/Artboard 4.avif',
+    src: '/facade-cleaning.avif',
     title: 'تنظيف الواجهات',
     category: 'خدمات خارجية'
   },
   {
-    src: '/Artboard 5.avif',
+    src: '/home-disinfection.avif',
     title: 'تعقيم المنازل',
     category: 'تنظيف منازل'
   },
   {
-    src: '/Artboard 6.avif',
+    src: '/kitchen-cleaning.avif',
     title: 'تنظيف المطابخ',
     category: 'تنظيف متخصص'
   }

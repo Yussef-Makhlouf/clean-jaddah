@@ -1,36 +1,160 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# شركة النظافة المثالية - موقع خدمات التنظيف في جدة
 
-## Getting Started
+موقع إلكتروني احترافي لشركة النظافة المثالية في جدة، يقدم خدمات تنظيف شاملة ومتخصصة.
 
-First, run the development server:
+## المميزات
+
+### الصفحات الرئيسية
+- **الصفحة الرئيسية**: عرض شامل للخدمات والمميزات
+- **صفحة الخدمات**: عرض جميع الخدمات المتاحة
+- **صفحات الخدمات الفردية**: صفحات مخصصة لكل خدمة
+
+### الخدمات المتاحة
+1. **تنظيف المنازل** (`/services/home-cleaning/`)
+   - تنظيف شامل للمنازل والشقق
+   - تنظيف المطابخ والحمامات
+   - تنظيف السجاد والأرضيات
+   - أسعار تنافسية
+
+2. **تنظيف المكاتب** (`/services/office-cleaning/`)
+   - خدمات احترافية للشركات
+   - تنظيف قاعات الاجتماعات
+   - تعقيم الأسطح المشتركة
+   - خدمة مسائية
+
+3. **تنظيف السجاد** (`/services/carpet-cleaning/`)
+   - تنظيف بالبخار
+   - إزالة البقع الصعبة
+   - تجفيف سريع
+   - حماية الألوان
+
+4. **تنظيف النوافذ** (`/services/window-cleaning/`)
+   - تنظيف بدون خطوط
+   - معدات متخصصة للأماكن المرتفعة
+   - تنظيف الواجهات الزجاجية
+
+5. **تنظيف ما بعد البناء** (`/services/post-construction/`)
+   - إزالة مخلفات البناء
+   - تنظيف الدهانات
+   - تعقيم شامل
+
+6. **خدمات التعقيم** (`/services/disinfection/`)
+   - تعقيم شامل
+   - حماية من الجراثيم
+   - مواد آمنة
+
+### صفحة طريقة التنفيذ
+- **طريقة تنفيذ الخدمات** (`/services/implementation/`)
+  - خطوات منظمة
+  - أحياء جدة المغطاة
+  - تفاصيل العملية
+
+## التحسينات التقنية
+
+### تحسينات SEO
+- كلمات مفتاحية محسنة لكل صفحة
+- Meta tags شاملة
+- Sitemap محدث
+- Robots.txt محسن
+- هيكل URL منظم
+
+### التصميم
+- تصميم متجاوب (Responsive)
+- واجهة مستخدم عربية
+- ألوان متناسقة
+- تجربة مستخدم سلسة
+
+### الأداء
+- تحميل سريع
+- صور محسنة
+- كود نظيف ومنظم
+
+## التقنيات المستخدمة
+
+- **Next.js 14**: إطار العمل الرئيسي
+- **TypeScript**: لكتابة كود آمن
+- **Tailwind CSS**: للتصميم
+- **Lucide React**: للأيقونات
+- **React**: لواجهة المستخدم
+
+## هيكل المشروع
+
+```
+clean-jaddah/
+├── app/
+│   ├── services/
+│   │   ├── home-cleaning/
+│   │   ├── office-cleaning/
+│   │   ├── carpet-cleaning/
+│   │   ├── window-cleaning/
+│   │   ├── post-construction/
+│   │   ├── disinfection/
+│   │   ├── implementation/
+│   │   ├── layout.tsx
+│   │   └── page.tsx
+│   ├── blog/
+│   └── layout.tsx
+├── components/
+│   ├── Services.tsx
+│   ├── FeaturedServices.tsx
+│   └── ...
+├── public/
+│   ├── sitemap.xml
+│   └── robots.txt
+└── README.md
+```
+
+## التثبيت والتشغيل
 
 ```bash
+# تثبيت التبعيات
+npm install
+
+# تشغيل المشروع في وضع التطوير
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
+# بناء المشروع للإنتاج
+npm run build
+
+# تشغيل المشروع في وضع الإنتاج
+npm start
 ```
-Product : https://cleanwithfresh.com/
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## المميزات الإضافية
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### تحسينات المحتوى
+- محتوى غني ومفصل لكل خدمة
+- معلومات عن أحياء جدة
+- أسعار شفافة
+- مميزات واضحة
 
-## Learn More
+### تحسينات التواصل
+- أرقام هواتف واضحة
+- روابط واتساب
+- نماذج اتصال
+- معلومات التواصل
 
-To learn more about Next.js, take a look at the following resources:
+### تحسينات الجودة
+- ضمان رضا العملاء
+- فريق محترف
+- مواد آمنة
+- خدمة سريعة
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## التحديثات المستقبلية
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- إضافة نظام حجز إلكتروني
+- إضافة نظام دفع إلكتروني
+- إضافة نظام تقييم العملاء
+- إضافة المزيد من الخدمات
+- تحسين SEO أكثر
 
-## Deploy on Vercel
+## الدعم
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+للحصول على الدعم أو الاستفسارات:
+- الهاتف: +966565265233
+- الواتساب: [رابط الواتساب](https://wa.me/966565265233)
+- البريد الإلكتروني: info@cleanwithfresh.com
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+© 2025 شركة النظافة المثالية - جميع الحقوق محفوظة
