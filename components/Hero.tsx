@@ -153,7 +153,7 @@ export default function Hero() {
             { title: 'تعقيم وتطهير', icon: 'sanitize.svg', desc: 'خدمات تعقيم وتطهير بمعايير عالمية' },
           ].map((service, index) => (
             <Link 
-              href="#services" 
+              href="/services" 
               key={index}
               className="bg-white/10 backdrop-blur-sm hover:bg-white/20 rounded-xl p-6 transition-all duration-300 hover:shadow-lg group"
             >

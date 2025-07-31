@@ -1158,7 +1158,7 @@ const blogPosts: BlogPost[] = [
          إن التنظيف الخالي من الحساسية يساعد في تحسين جودة الحياة. اتبع هذه النصائح وستحصل على منزل صحي ومريح.
      </p>
      `,
-     coverImage: '/arabic color.avif',
+     coverImage: '/luxury-villa-cleaning.avif',
      tags: ['تنظيف خالي من الحساسية', 'صحة المنزل', 'حساسية']
    },
    {
@@ -1263,7 +1263,7 @@ const blogPosts: BlogPost[] = [
          إن التنظيف العميق هو استثمار في صحة وجمال منزلك. اتبع هذه التقنيات وستحصل على منزل نظيف وصحي.
      </p>
      `,
-     coverImage: '/logo.avif',
+     coverImage: '/facade-cleaning.avif',
      tags: ['تنظيف عميق', 'تقنيات تنظيف', 'تنظيف شامل']
    },
    {
@@ -1396,7 +1396,7 @@ const blogPosts: BlogPost[] = [
          إن جدولة التنظيف تساعد في الحفاظ على منزل نظيف ومنظم. اتبع هذا الجدول وستحصل على منزل مثالي.
      </p>
      `,
-     coverImage: '/carpet-clean.svg',
+        coverImage: '/carpet-clean.svg',
      tags: ['جدولة تنظيف', 'تنظيم المنزل', 'نصائح تنظيف']
    }
 ];

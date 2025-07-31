@@ -1,109 +1,131 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!--  Sitemap for Clean Jeddah - Optimized for SEO  -->
+<!--  Sitemap for Clean Jeddah - Generated Dynamically  -->
 
-<!-- الصفحة الرئيسية - أعلى أولوية -->
+<!-- / -->
 <url>
 <loc>https://cleanwithfresh.com/</loc>
-<lastmod>2025-01-20T06:26:38+00:00</lastmod>
+<lastmod>2025-07-31T09:45:43.903Z</lastmod>
 <priority>1.00</priority>
 <changefreq>weekly</changefreq>
 </url>
 
-<!-- صفحة الخدمات الرئيسية -->
+<!-- /services/ -->
 <url>
 <loc>https://cleanwithfresh.com/services/</loc>
-<lastmod>2025-01-20T06:26:38+00:00</lastmod>
+<lastmod>2025-07-31T09:45:43.903Z</lastmod>
 <priority>0.90</priority>
 <changefreq>monthly</changefreq>
 </url>
 
-<!-- صفحات الخدمات الأساسية -->
+<!-- /services/home-cleaning/ -->
 <url>
-<loc>https://cleanwithfresh.com/services/home-cleaning</loc>
-<lastmod>2025-01-20T06:26:38+00:00</lastmod>
+<loc>https://cleanwithfresh.com/services/home-cleaning/</loc>
+<lastmod>2025-07-31T09:45:43.903Z</lastmod>
 <priority>0.85</priority>
-<changefreq>monthly</changefreq>
-</url>
-<url>
-<loc>https://cleanwithfresh.com/services/office-cleaning</loc>
-<lastmod>2025-01-20T06:26:38+00:00</lastmod>
-<priority>0.85</priority>
-<changefreq>monthly</changefreq>
-</url>
-<url>
-<loc>https://cleanwithfresh.com/services/carpet-cleaning</loc>
-<lastmod>2025-01-20T06:26:38+00:00</lastmod>
-<priority>0.85</priority>
-<changefreq>monthly</changefreq>
-</url>
-<url>
-<loc>https://cleanwithfresh.com/services/window-cleaning</loc>
-<lastmod>2025-01-20T06:26:38+00:00</lastmod>
-<priority>0.85</priority>
-<changefreq>monthly</changefreq>
-</url>
-<url>
-<loc>https://cleanwithfresh.com/services/post-construction</loc>
-<lastmod>2025-01-20T06:26:38+00:00</lastmod>
-<priority>0.85</priority>
-<changefreq>monthly</changefreq>
-</url>
-<url>
-<loc>https://cleanwithfresh.com/services/disinfection</loc>
-<lastmod>2025-01-20T06:26:38+00:00</lastmod>
-<priority>0.85</priority>
-<changefreq>monthly</changefreq>
-</url>
-<url>
-<loc>https://cleanwithfresh.com/services/implementation</loc>
-<lastmod>2025-01-20T06:26:38+00:00</lastmod>
-<priority>0.80</priority>
 <changefreq>monthly</changefreq>
 </url>
 
-<!-- صفحة المدونة الرئيسية -->
+<!-- /services/office-cleaning/ -->
 <url>
-<loc>https://cleanwithfresh.com/blog</loc>
-<lastmod>2025-01-20T06:26:38+00:00</lastmod>
+<loc>https://cleanwithfresh.com/services/office-cleaning/</loc>
+<lastmod>2025-07-31T09:45:43.903Z</lastmod>
+<priority>0.85</priority>
+<changefreq>monthly</changefreq>
+</url>
+
+<!-- /services/carpet-cleaning/ -->
+<url>
+<loc>https://cleanwithfresh.com/services/carpet-cleaning/</loc>
+<lastmod>2025-07-31T09:45:43.903Z</lastmod>
+<priority>0.85</priority>
+<changefreq>monthly</changefreq>
+</url>
+
+<!-- /services/window-cleaning/ -->
+<url>
+<loc>https://cleanwithfresh.com/services/window-cleaning/</loc>
+<lastmod>2025-07-31T09:45:43.903Z</lastmod>
+<priority>0.85</priority>
+<changefreq>monthly</changefreq>
+</url>
+
+<!-- /services/post-construction/ -->
+<url>
+<loc>https://cleanwithfresh.com/services/post-construction/</loc>
+<lastmod>2025-07-31T09:45:43.903Z</lastmod>
+<priority>0.85</priority>
+<changefreq>monthly</changefreq>
+</url>
+
+<!-- /services/disinfection/ -->
+<url>
+<loc>https://cleanwithfresh.com/services/disinfection/</loc>
+<lastmod>2025-07-31T09:45:43.903Z</lastmod>
+<priority>0.85</priority>
+<changefreq>monthly</changefreq>
+</url>
+
+<!-- /services/implementation/ -->
+<url>
+<loc>https://cleanwithfresh.com/services/implementation/</loc>
+<lastmod>2025-07-31T09:45:43.903Z</lastmod>
+<priority>0.85</priority>
+<changefreq>monthly</changefreq>
+</url>
+
+<!-- /blog/ -->
+<url>
+<loc>https://cleanwithfresh.com/blog/</loc>
+<lastmod>2025-07-31T09:45:43.903Z</lastmod>
 <priority>0.80</priority>
 <changefreq>weekly</changefreq>
 </url>
 
-<!-- مقالات المدونة الأساسية - محتوى فريد -->
+<!-- /blog/professional-cleaning-services-in-jeddah -->
 <url>
 <loc>https://cleanwithfresh.com/blog/professional-cleaning-services-in-jeddah</loc>
-<lastmod>2025-01-20T06:26:38+00:00</lastmod>
+<lastmod>2025-07-31T09:45:43.903Z</lastmod>
 <priority>0.75</priority>
 <changefreq>monthly</changefreq>
 </url>
+
+<!-- /blog/eco-friendly-cleaning-solutions -->
 <url>
 <loc>https://cleanwithfresh.com/blog/eco-friendly-cleaning-solutions</loc>
-<lastmod>2025-01-20T06:26:38+00:00</lastmod>
+<lastmod>2025-07-31T09:45:43.903Z</lastmod>
 <priority>0.75</priority>
 <changefreq>monthly</changefreq>
 </url>
+
+<!-- /blog/spring-cleaning-tips -->
 <url>
 <loc>https://cleanwithfresh.com/blog/spring-cleaning-tips</loc>
-<lastmod>2025-01-20T06:26:38+00:00</lastmod>
+<lastmod>2025-07-31T09:45:43.903Z</lastmod>
 <priority>0.75</priority>
 <changefreq>monthly</changefreq>
 </url>
+
+<!-- /blog/home-disinfection -->
 <url>
 <loc>https://cleanwithfresh.com/blog/home-disinfection</loc>
-<lastmod>2025-01-20T06:26:38+00:00</lastmod>
+<lastmod>2025-07-31T09:45:43.903Z</lastmod>
 <priority>0.75</priority>
 <changefreq>monthly</changefreq>
 </url>
+
+<!-- /blog/jeddah-cleaning-services -->
 <url>
 <loc>https://cleanwithfresh.com/blog/jeddah-cleaning-services</loc>
-<lastmod>2025-01-20T06:26:38+00:00</lastmod>
+<lastmod>2025-07-31T09:45:43.903Z</lastmod>
 <priority>0.75</priority>
 <changefreq>monthly</changefreq>
 </url>
+
+<!-- /blog/carpet-cleaning -->
 <url>
 <loc>https://cleanwithfresh.com/blog/carpet-cleaning</loc>
-<lastmod>2025-01-20T06:26:38+00:00</lastmod>
+<lastmod>2025-07-31T09:45:43.903Z</lastmod>
 <priority>0.75</priority>
 <changefreq>monthly</changefreq>
 </url>
