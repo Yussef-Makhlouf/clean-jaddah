@@ -57,9 +57,7 @@ export const metadata: Metadata = {
     telephone: false,
   },
   metadataBase: new URL('https://cleanwithfresh.com'),
-  verification: {
-    google: 'your-google-verification-code',
-  },
+
 }
 
 export default function ServicesLayout({
