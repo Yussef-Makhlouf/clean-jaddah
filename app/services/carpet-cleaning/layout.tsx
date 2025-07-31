@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     description: 'خدمة تنظيف السجاد والموكيت المتخصصة في جدة ✨ تنظيف عميق بالبخار، إزالة البقع المستعصية، خبرة 10+ سنوات',
     type: 'website',
     locale: 'ar_SA',
-    url: 'https://cleanwithfresh.com/services/carpet-cleaning',
+    url: '/services/carpet-cleaning',
     siteName: 'شركة النظافة المثالية',
     images: [
       {

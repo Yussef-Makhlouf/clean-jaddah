@@ -22,7 +22,7 @@ const defaultService = {
   areaServed: "جدة، المملكة العربية السعودية",
   priceRange: "$$",
   availableHours: "Mo-Su 08:00-20:00",
-  providerName: "شركة النظافة المثالية",
+  providerName: "أفضل شركة تنظيف في جدة",
   providerUrl: "https://cleanwithfresh.com",
   providerPhone: "+966565265233",
   providerAddress: {

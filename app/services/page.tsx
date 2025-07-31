@@ -26,26 +26,26 @@ import LocalBusinessSchema from '@/components/seo/LocalBusinessSchema'
 import Breadcrumbs from '@/components/seo/Breadcrumbs'
 
 export const metadata: Metadata = {
-  title: 'خدمات التنظيف في جدة - شركة النظافة المثالية | تنظيف منازل ومكاتب وفلل والتنفيذ',
+  title: 'خدمات التنظيف في جدة - أفضل شركة تنظيف في جدة | تنظيف منازل ومكاتب وفلل والتنفيذ',
   description: 'أفضل شركة تنظيف في جدة تقدم خدمات شاملة: تنظيف المنازل والفلل، المكاتب والشركات، السجاد والموكيت، النوافذ والواجهات، التعقيم والتطهير، وخدمات التنفيذ المتخصصة. خدمة 24 ساعة بأسعار تنافسية وضمان جودة عالية في جميع أحياء جدة.',
   keywords: 'خدمات تنظيف جدة, شركة نظافة جدة, تنظيف منازل جدة, تنظيف مكاتب جدة, تنظيف فلل جدة, تنظيف سجاد جدة, تنظيف نوافذ جدة, تعقيم جدة, تنظيف ما بعد البناء جدة, خدمات التنفيذ جدة, شركة تنظيف شمال جدة, شركة تنظيف جنوب جدة, تنظيف احترافي جدة, تنظيف بالبخار جدة, شركة النظافة المثالية, أفضل شركة تنظيف في جدة, تنظيف 24 ساعة جدة, أسعار تنظيف جدة, عرض أسعار تنظيف مجاني',
   openGraph: {
-    title: 'خدمات التنظيف في جدة - شركة النظافة المثالية',
+    title: 'خدمات التنظيف في جدة - أفضل شركة تنظيف في جدة',
     description: 'أفضل شركة تنظيف في جدة - خدمات شاملة ومتخصصة بأعلى معايير الجودة والاحترافية',
     type: 'website',
     locale: 'ar_SA',
-    url: 'https://cleanwithfresh.com/services',
-    siteName: 'شركة النظافة المثالية',
+    url: '/services',
+    siteName: 'أفضل شركة تنظيف في جدة',
     images: [{
       url: '/cover.avif',
       width: 1200,
       height: 630,
-      alt: 'خدمات التنظيف في جدة - شركة النظافة المثالية'
+      alt: 'خدمات التنظيف في جدة - أفضل شركة تنظيف في جدة'
     }]
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'خدمات التنظيف في جدة - شركة النظافة المثالية',
+    title: 'خدمات التنظيف في جدة - أفضل شركة تنظيف في جدة',
     description: 'أفضل شركة تنظيف في جدة - خدمات شاملة ومتخصصة',
     images: ['/cover.avif']
   },
@@ -262,7 +262,7 @@ export default function ServicesPage() {
       <LocalBusinessSchema 
         name="شركة النظافة المثالية"
         description="أفضل شركة تنظيف في جدة تقدم خدمات تنظيف شاملة للمنازل والمكاتب والفلل والسجاد والنوافذ والتعقيم بأعلى معايير الجودة"
-        url="https://cleanwithfresh.com"
+        url="/"
         telephone="+966565265233"
       />
       <ServiceSchema 
@@ -271,13 +271,13 @@ export default function ServicesPage() {
         description="خدمات تنظيف شاملة ومتخصصة في جدة تشمل تنظيف المنازل والمكاتب والفلل والسجاد والنوافذ والتعقيم"
         areaServed="جدة، المملكة العربية السعودية"
         priceRange="199-1999 ريال سعودي"
-        url="https://cleanwithfresh.com/services"
+        url="/services"
         image="/cover.avif"
       />
       <Breadcrumbs 
         items={[
-          { name: "الرئيسية", url: "https://cleanwithfresh.com" },
-          { name: "خدمات التنظيف في جدة", url: "https://cleanwithfresh.com/services" }
+          { name: "الرئيسية", url: "/" },
+          { name: "خدمات التنظيف في جدة", url: "/services" }
         ]}
       />
 

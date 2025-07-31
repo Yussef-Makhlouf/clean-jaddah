@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     description: 'خدمة تنظيف المنازل الشاملة في جدة 🏠 تنظيف المطابخ، الحمامات، غرف النوم، الصالات. فريق مدرب، مواد آمنة',
     type: 'website',
     locale: 'ar_SA',
-    url: 'https://cleanwithfresh.com/services/home-cleaning',
+    url: '/services/home-cleaning',
     siteName: 'شركة النظافة المثالية',
     images: [
       {

@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     description: 'خدمة تنظيف المكاتب والشركات المتخصصة في جدة 🏢 تنظيف شامل للمكاتب، غرف الاجتماعات، المطابخ. فريق محترف، معدات حديثة',
     type: 'website',
     locale: 'ar_SA',
-    url: 'https://cleanwithfresh.com/services/office-cleaning',
+    url: '/services/office-cleaning',
     siteName: 'شركة النظافة المثالية',
     images: [
       {

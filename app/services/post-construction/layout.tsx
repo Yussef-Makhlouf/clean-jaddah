@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     description: 'خدمة تنظيف ما بعد البناء والترميم في جدة 🏗️ إزالة مخلفات البناء، تنظيف شامل للأرضيات والنوافذ والمرافق',
     type: 'website',
     locale: 'ar_SA',
-    url: 'https://cleanwithfresh.com/services/post-construction',
+    url: '/services/post-construction',
     siteName: 'شركة النظافة المثالية',
     images: [
       {

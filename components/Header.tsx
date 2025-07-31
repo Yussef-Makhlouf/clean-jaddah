@@ -61,14 +61,14 @@ export default function Header() {
             <div className="flex items-center gap-2 transition-all duration-300 group-hover:scale-105">
               <Image 
                 src="/arabic color.avif" 
-                alt="شركة النظافة المثالية" 
+                alt="أفضل شركة تنظيف في جدة" 
                 width={50} 
                 height={50} 
                 className="object-contain rounded-full border-2 border-[#1976D2] p-1" 
                 priority
               />
               <div className="flex flex-col">
-                <span className="text-xl md:text-2xl font-bold text-[#1976D2]">شركة النظافة المثالية</span>
+                <span className="text-xl md:text-2xl font-bold text-[#1976D2]">أفضل شركة تنظيف في جدة</span>
                 <span className="text-xs md:text-sm text-gray-600">خدمات تنظيف احترافية</span>
               </div>
             </div>

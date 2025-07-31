@@ -14,7 +14,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 p-12">
           {/* Company Info */}
           <div className="backdrop-blur-sm bg-white/5 rounded-2xl p-6 space-y-4">
-            <h3 className="text-2xl font-bold text-white">شركة النظافة المثالية</h3>
+            <h3 className="text-2xl font-bold text-white">أفضل شركة تنظيف في جدة</h3>
             <p className="text-blue-100 leading-relaxed">
               نقدم خدمات تنظيف احترافية بأعلى معايير الجودة والكفاءة
             </p>
@@ -24,11 +24,16 @@ export default function Footer() {
           <div className="backdrop-blur-sm bg-white/5 rounded-2xl p-6 space-y-4">
             <h4 className="text-xl font-semibold text-white">روابط سريعة</h4>
             <ul className="space-y-3">
-              {['خدماتنا', 'من نحن', 'معرض الأعمال', 'اتصل بنا'].map((item) => (
-                <li key={item}>
-                  <a href={`#${item}`} className="text-blue-100 hover:text-white transition-colors flex items-center gap-2">
+              {[
+                { label: 'خدماتنا', href: '/services' },
+                { label: 'من نحن', href: '#about' },
+                { label: 'معرض الأعمال', href: '#gallery' },
+                { label: 'اتصل بنا', href: '#contact' }
+              ].map((item) => (
+                <li key={item.label}>
+                  <a href={item.href} className="text-blue-100 hover:text-white transition-colors flex items-center gap-2">
                     <span className="w-2 h-2 bg-blue-300 rounded-full" />
-                    {item}
+                    {item.label}
                   </a>
                 </li>
               ))}
@@ -77,7 +82,7 @@ export default function Footer() {
         <div className="border-t border-white/10">
           <div className="container mx-auto px-6 py-4">
             <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-              <p className="text-blue-100">© {new Date().getFullYear()} شركة النظافة المثالية. جميع الحقوق محفوظة.</p>
+              <p className="text-blue-100">© {new Date().getFullYear()} أفضل شركة تنظيف في جدة. جميع الحقوق محفوظة.</p>
               <a 
                 href="https://fashne.net" 
                 target="_blank" 

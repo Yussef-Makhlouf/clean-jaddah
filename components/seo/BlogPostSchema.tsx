@@ -17,7 +17,7 @@ const defaultBlogPost = {
   image: "/images/blog/home-disinfection.png",
   datePublished: "2024-01-01",
   dateModified: "2024-01-01",
-  authorName: "شركة النظافة المثالية",
+  authorName: "أفضل شركة تنظيف في جدة",
 };
 
 const BlogPostSchema: React.FC<BlogPostSchemaProps> = ({

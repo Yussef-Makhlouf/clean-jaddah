@@ -69,8 +69,8 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
       />
       <Breadcrumbs
         items={[
-          { name: 'الرئيسية', url: 'https://cleanwithfresh.com' },
-          { name: 'المدونة', url: 'https://cleanwithfresh.com/blog' },
+                  { name: 'الرئيسية', url: '/' },
+        { name: 'المدونة', url: '/blog' },
           { name: post.title, url: `https://cleanwithfresh.com/blog/${post.slug}` }
         ]}
       />

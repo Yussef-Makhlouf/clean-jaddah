@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     description: 'خدمة تنفيذ وإدارة مشاريع النظافة في جدة 📋 تنفيذ خطط النظافة، إدارة فرق العمل، مراقبة الجودة والتقارير',
     type: 'website',
     locale: 'ar_SA',
-    url: 'https://cleanwithfresh.com/services/implementation',
+    url: '/services/implementation',
     siteName: 'شركة النظافة المثالية',
     images: [
       {

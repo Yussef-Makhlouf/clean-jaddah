@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     description: 'خدمة تنظيف النوافذ والواجهات الزجاجية المتخصصة في جدة 🪟 تنظيف داخلي وخارجي، تلميع بدون خطوط، معدات حديثة',
     type: 'website',
     locale: 'ar_SA',
-    url: 'https://cleanwithfresh.com/services/window-cleaning',
+    url: '/services/window-cleaning',
     siteName: 'شركة النظافة المثالية',
     images: [
       {

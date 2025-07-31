@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     description: 'خدمة التعقيم والتطهير الشاملة في جدة 🦠 تعقيم ضد الفيروسات، الجراثيم، كوفيد-19',
     type: 'website',
     locale: 'ar_SA',
-    url: 'https://cleanwithfresh.com/services/disinfection',
+    url: '/services/disinfection',
     siteName: 'شركة النظافة المثالية',
     images: [
       {
