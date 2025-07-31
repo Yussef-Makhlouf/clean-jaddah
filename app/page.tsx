@@ -4,6 +4,7 @@ import AboutUs from "@/components/AboutUs";
 import FAQ from "@/components/FAQ";
 import FeaturedServices from "@/components/FeaturedServices";
 import Features from "@/components/Features";
+import FloatingButtons from "@/components/FloatingButtons";
 import Footer from "@/components/Footer";
 import Gallery from "@/components/Gallery";
 import Header from "@/components/Header";
@@ -29,6 +30,7 @@ export default function Home() {
       <LatestBlogPosts />
       <FAQ />
       <Footer />
+      <FloatingButtons />
     </main>
   )
 } 
