@@ -56,7 +56,7 @@ export default function Hero() {
             </header>
             <div className="flex flex-wrap gap-4">
               <a 
-                href="https://wa.me/966123456789" 
+                href="https://wa.me/966592425757" 
                 className="bg-yellow-400 hover:bg-yellow-500 text-gray-900 py-3 px-8 rounded-full text-lg font-semibold transition duration-300 shadow-lg hover:shadow-xl flex items-center gap-2 group"
                 aria-label="تواصل معنا عبر واتساب"
               >
@@ -64,7 +64,7 @@ export default function Hero() {
                 <ArrowRight className="w-5 h-5 transform group-hover:translate-x-1 transition-transform rtl:rotate-180" />
               </a>
               <a 
-                href="tel:+966123456789" 
+                href="tel:+966592425757" 
                 className="flex items-center gap-2 text-white bg-white/10 backdrop-blur-sm hover:bg-white/20 py-3 px-6 rounded-full text-lg font-medium transition duration-300 border border-white/20"
                 aria-label="اتصل بنا الآن"
               >

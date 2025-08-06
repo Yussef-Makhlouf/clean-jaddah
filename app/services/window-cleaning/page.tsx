@@ -373,14 +373,14 @@ export default function WindowCleaningPage() {
                 </p>
                 <div className="flex flex-wrap gap-4">
                   <a 
-                    href="tel:+966565265233"
+                    href="tel:+966592425757"
                     className="bg-yellow-400 text-gray-900 px-8 py-4 rounded-xl font-bold text-lg hover:bg-yellow-300 transition-colors flex items-center gap-2"
                   >
                     <Phone className="w-5 h-5" />
                     اتصل الآن لتنظيف نوافذك في جدة
                   </a>
                   <Link 
-                    href="https://wa.me/966565265233"
+                    href="https://wa.me/966592425757"
                     className="bg-green-500 text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-green-400 transition-colors flex items-center gap-2"
                   >
                     <MessageCircle className="w-5 h-5" />
@@ -731,14 +731,14 @@ export default function WindowCleaningPage() {
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <a 
-                href="tel:+966565265233"
+                href="tel:+966592425757"
                 className="bg-yellow-400 text-gray-900 px-8 py-4 rounded-xl font-bold text-lg hover:bg-yellow-300 transition-colors flex items-center gap-2"
               >
                 <Phone className="w-5 h-5" />
-                اتصل بنا: 966565265233+
+                اتصل بنا: 966592425757+
               </a>
               <Link 
-                href="https://wa.me/966565265233"
+                href="https://wa.me/966592425757"
                 className="bg-green-500 text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-green-400 transition-colors flex items-center gap-2"
               >
                 <MessageCircle className="w-5 h-5" />

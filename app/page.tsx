@@ -4,7 +4,7 @@ import AboutUs from "@/components/AboutUs";
 import FAQ from "@/components/FAQ";
 import FeaturedServices from "@/components/FeaturedServices";
 import Features from "@/components/Features";
-import FloatingButtons from "@/components/FloatingButtons";
+import FloatingButtons from "@/components/ui/FloatingButtons";
 import Footer from "@/components/Footer";
 import Gallery from "@/components/Gallery";
 import Header from "@/components/Header";

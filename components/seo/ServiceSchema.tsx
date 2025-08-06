@@ -24,7 +24,7 @@ const defaultService = {
   availableHours: "Mo-Su 08:00-20:00",
   providerName: "أفضل شركة تنظيف في جدة",
   providerUrl: "https://cleanwithfresh.com",
-  providerPhone: "+966565265233",
+  providerPhone: "+966592425757",
   providerAddress: {
     "@type": "PostalAddress",
     streetAddress: "شارع الأمير محمد بن عبد العزيز",

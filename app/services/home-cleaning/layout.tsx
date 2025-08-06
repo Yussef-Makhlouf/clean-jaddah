@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'تنظيف المنازل في جدة - شركة النظافة المثالية',
-    description: 'خدمة تنظيف المنازل الشاملة في جدة 🏠 تنظيف المطابخ، الحمامات، غرف النوم، الصالات',
+    description: 'خدمة تنظيف المنازل الشاملة في جدة  تنظيف المطابخ، الحمامات، غرف النوم، الصالات',
     site: '@cleanwithfresh',
     creator: '@cleanwithfresh',
     images: ['/images/blog/home-disinfection.png']
@@ -48,7 +48,7 @@ export const metadata: Metadata = {
   },
   other: {
     'google-site-verification': 'your-verification-code',
-    'msvalidate.01': 'your-bing-verification-code',
+
   },
 }
 

@@ -33,9 +33,9 @@ export default function Header() {
       <div className="hidden lg:block bg-[#1976D2] text-white py-1">
         <div className="container mx-auto px-6 flex justify-between items-center text-sm">
           <div className="flex items-center gap-4">
-            <a href="tel:+966565265233" className="flex items-center gap-1 hover:text-yellow-300 transition-colors" aria-label="اتصل بنا">
+            <a href="tel:+966592425757" className="flex items-center gap-1 hover:text-yellow-300 transition-colors" aria-label="اتصل بنا">
               <Phone className="w-4 h-4" />
-              <span>+966565265233</span>
+              <span>+966592425757</span>
             </a>
             <span className="flex items-center gap-1">
               <MapPin className="w-4 h-4" />
@@ -90,7 +90,7 @@ export default function Header() {
               </Link>
             ))}
             <a 
-              href="https://wa.me/966565265233" 
+              href="https://wa.me/966592425757" 
               className="bg-[#1976D2] hover:bg-[#1565C0] text-white py-2 px-4 lg:px-6 rounded-full text-sm font-medium transition duration-300 flex items-center gap-1 shadow-md hover:shadow-lg"
               aria-label="احجز الآن"
             >
@@ -128,14 +128,14 @@ export default function Header() {
                 </Link>
               ))}
               <a 
-                href="https://wa.me/966565265233" 
+                href="https://wa.me/966592425757" 
                 className="bg-[#1976D2] text-white py-2 px-6 mx-6 rounded-md text-center font-medium shadow-md"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 احجز الآن
               </a>
               <div className="border-t border-gray-200 pt-3 mt-3 px-6 flex justify-center space-x-4 rtl:space-x-reverse">
-                <a href="tel:0565265233" className="text-gray-600 hover:text-[#1976D2] transition-colors" aria-label="اتصل بنا">
+                <a href="tel:0592425757" className="text-gray-600 hover:text-[#1976D2] transition-colors" aria-label="اتصل بنا">
                   <Phone className="w-5 h-5" />
                 </a>
                 <a href="https://facebook.com" aria-label="فيسبوك" className="text-gray-600 hover:text-[#1976D2] transition-colors">
