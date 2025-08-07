@@ -11,7 +11,7 @@ const stats = [
   },
   {
     icon: <Trophy className="w-8 h-8" />,
-    value: "10",
+    value: "15+",
     label: "سنوات خبرة"
   },
   {
