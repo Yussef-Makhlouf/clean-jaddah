@@ -1,4 +1,4 @@
-import { Metadata } from 'next'
+
 import Image from 'next/image'
 import Link from 'next/link'
 import { 
@@ -107,17 +107,7 @@ import {
 
 } from 'lucide-react'
 
-export const metadata: Metadata = {
-  title: 'طريقة تنفيذ خدمات التنظيف في جدة - شركة النظافة المثالية | منهجية احترافية',
-  description: 'تعرف على طريقة تنفيذ خدمات التنظيف في جدة وأحيائها المختلفة. منهجية احترافية وخطوات منظمة لضمان أفضل النتائج.',
-  keywords: 'طريقة تنفيذ خدمات التنظيف جدة, منهجية التنظيف جدة, خطوات التنظيف جدة, كيفية التنظيف جدة, مراحل التنظيف جدة, معايير التنظيف جدة',
-  openGraph: {
-    title: 'طريقة تنفيذ خدمات التنظيف في جدة - شركة النظافة المثالية',
-    description: 'منهجية احترافية وخطوات منظمة لتنفيذ خدمات التنظيف في جدة',
-    type: 'website',
-    locale: 'ar_SA',
-  },
-}
+
 
 const implementationFeatures = [
   {
@@ -425,14 +415,14 @@ export default function ImplementationPage() {
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <a 
-                href="tel:+966592425757"
+                href="tel:+966592425077"
                 className="bg-yellow-400 text-gray-900 px-8 py-4 rounded-xl font-bold text-lg hover:bg-yellow-300 transition-colors flex items-center gap-2"
               >
                 <Phone className="w-5 h-5" />
                 اتصل الآن لمعرفة منهجية تنفيذ خدمات التنظيف في جدة
               </a>
               <Link 
-                href="https://wa.me/966592425757"
+                href="https://wa.me/966592425077"
                 className="bg-green-500 text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-green-400 transition-colors flex items-center gap-2"
               >
                 <MessageCircle className="w-5 h-5" />
@@ -742,14 +732,14 @@ export default function ImplementationPage() {
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <a 
-              href="tel:+966592425757"
+              href="tel:+966592425077"
               className="bg-yellow-400 text-gray-900 px-8 py-4 rounded-xl font-bold text-lg hover:bg-yellow-300 transition-colors flex items-center gap-2"
             >
               <Phone className="w-5 h-5" />
-              اتصل بنا: 966592425757+
+              اتصل بنا: 966592425077+
             </a>
             <Link 
-              href="https://wa.me/966592425757"
+              href="https://wa.me/966592425077"
               className="bg-green-500 text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-green-400 transition-colors flex items-center gap-2"
             >
               <MessageCircle className="w-5 h-5" />

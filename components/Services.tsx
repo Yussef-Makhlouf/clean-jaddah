@@ -143,7 +143,7 @@ export default function Services() {
                     <ArrowRight className="w-4 h-4" />
                   </Link>
                   <a
-                    href="tel:+966592425757"
+                    href="tel:+966592425077"
                     className="flex-1 bg-white text-[#1976D2] border border-[#1976D2] py-3 rounded-xl flex items-center justify-center transition-all duration-300 hover:bg-blue-50 text-sm"
                   >
                     اتصل بنا

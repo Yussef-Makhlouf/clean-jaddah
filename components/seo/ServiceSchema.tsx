@@ -22,15 +22,15 @@ const defaultService = {
   areaServed: "جدة، المملكة العربية السعودية",
   priceRange: "$$",
   availableHours: "Mo-Su 08:00-20:00",
-  providerName: "أفضل شركة تنظيف في جدة",
+  providerName: "شركة النظافة المثالية",
   providerUrl: "https://cleanwithfresh.com",
-  providerPhone: "+966592425757",
+  providerPhone: "+966592425077",
   providerAddress: {
     "@type": "PostalAddress",
     streetAddress: "شارع الأمير محمد بن عبد العزيز",
     addressLocality: "جدة",
-    addressRegion: "المنطقة الشرقية",
-    postalCode: "32211",
+    addressRegion: "منطقة مكة المكرمة",
+    postalCode: "21589",
     addressCountry: "SA"
   }
 };

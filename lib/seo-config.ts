@@ -70,6 +70,8 @@ export const SEO_CONFIG = {
     SERVICE_PAGES: 0.85,
     BLOG: 0.8,
     BLOG_POSTS: 0.75,
+    ABOUT: 0.7,
+    CONTACT: 0.6,
   },
 
   // تكرار تحديث الصفحات
@@ -79,6 +81,8 @@ export const SEO_CONFIG = {
     SERVICE_PAGES: 'monthly',
     BLOG: 'weekly',
     BLOG_POSTS: 'monthly',
+    ABOUT: 'monthly',
+    CONTACT: 'monthly',
   },
 };
 
@@ -113,6 +117,8 @@ export function getPagePriority(path: string): number {
   if (Object.values(SEO_CONFIG.SERVICE_PAGES).includes(path)) return SEO_CONFIG.PAGE_PRIORITIES.SERVICE_PAGES;
   if (path === SEO_CONFIG.CORE_PAGES.BLOG) return SEO_CONFIG.PAGE_PRIORITIES.BLOG;
   if (Object.values(SEO_CONFIG.BLOG_POSTS).includes(path)) return SEO_CONFIG.PAGE_PRIORITIES.BLOG_POSTS;
+  if (path === SEO_CONFIG.CORE_PAGES.ABOUT) return SEO_CONFIG.PAGE_PRIORITIES.ABOUT;
+  if (path === SEO_CONFIG.CORE_PAGES.CONTACT) return SEO_CONFIG.PAGE_PRIORITIES.CONTACT;
   
   return 0.5; // أولوية افتراضية
 }
@@ -124,6 +130,8 @@ export function getChangeFrequency(path: string): string {
   if (Object.values(SEO_CONFIG.SERVICE_PAGES).includes(path)) return SEO_CONFIG.CHANGE_FREQUENCIES.SERVICE_PAGES;
   if (path === SEO_CONFIG.CORE_PAGES.BLOG) return SEO_CONFIG.CHANGE_FREQUENCIES.BLOG;
   if (Object.values(SEO_CONFIG.BLOG_POSTS).includes(path)) return SEO_CONFIG.CHANGE_FREQUENCIES.BLOG_POSTS;
+  if (path === SEO_CONFIG.CORE_PAGES.ABOUT) return SEO_CONFIG.CHANGE_FREQUENCIES.ABOUT;
+  if (path === SEO_CONFIG.CORE_PAGES.CONTACT) return SEO_CONFIG.CHANGE_FREQUENCIES.CONTACT;
   
   return 'monthly'; // تكرار افتراضي
 } 

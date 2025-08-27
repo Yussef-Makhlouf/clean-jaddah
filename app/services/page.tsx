@@ -244,7 +244,7 @@ const faqData = [
   },
   {
     question: 'هل يمكن حجز خدمة التنظيف في نفس اليوم؟',
-    answer: 'نعم، نوفر خدمة تنظيف فورية في نفس اليوم (حسب توفر الموعد). اتصل بنا على 966592425757+ أو راسلنا عبر واتساب لحجز موعد فوري.'
+    answer: 'نعم، نوفر خدمة تنظيف فورية في نفس اليوم (حسب توفر الموعد). اتصل بنا على 966592425077+ أو راسلنا عبر واتساب لحجز موعد فوري.'
   }
 ]
 
@@ -263,7 +263,7 @@ export default function ServicesPage() {
         name="شركة النظافة المثالية"
         description="أفضل شركة تنظيف في جدة تقدم خدمات تنظيف شاملة للمنازل والمكاتب والفلل والسجاد والنوافذ والتعقيم بأعلى معايير الجودة"
         url="/"
-        telephone="+966592425757"
+        telephone="+966592425077"
       />
       <ServiceSchema 
         serviceName="خدمات التنظيف في جدة"
@@ -296,14 +296,14 @@ export default function ServicesPage() {
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <a 
-                href="tel:+966592425757"
+                href="tel:+966592425077"
                 className="bg-yellow-400 text-gray-900 px-8 py-4 rounded-xl font-bold text-lg hover:bg-yellow-300 transition-colors flex items-center gap-2"
               >
                 <Phone className="w-5 h-5" />
                 اتصل الآن للاستفسار عن خدمات التنظيف في جدة
               </a>
               <Link 
-                href="https://wa.me/966592425757"
+                href="https://wa.me/966592425077"
                 className="bg-green-500 text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-green-400 transition-colors flex items-center gap-2"
               >
                 <MessageCircle className="w-5 h-5" />
@@ -411,7 +411,7 @@ export default function ServicesPage() {
                         تفاصيل خدمة {service.title} في جدة
                       </Link>
                       <a
-                        href="tel:+966592425757"
+                        href="tel:+966592425077"
                         className="flex-1 bg-green-500 text-white py-3 rounded-xl text-center font-bold hover:bg-green-600 transition-colors"
                       >
                         احجز {service.title} الآن عبر الهاتف
@@ -446,7 +446,7 @@ export default function ServicesPage() {
               لا تجد منطقتك في القائمة؟ اتصل بنا - نقدم خدماتنا في جميع أنحاء جدة!
             </p>
             <a 
-              href="tel:+966592425757"
+              href="tel:+966592425077"
               className="inline-flex items-center gap-2 bg-blue-600 text-white px-6 py-3 rounded-lg font-bold hover:bg-blue-700 transition-colors"
             >
               <Phone className="w-5 h-5" />
@@ -492,14 +492,14 @@ export default function ServicesPage() {
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <a 
-                href="tel:+966592425757"
+                href="tel:+966592425077"
                 className="bg-blue-600 text-white px-6 py-3 rounded-lg font-bold hover:bg-blue-700 transition-colors flex items-center gap-2"
               >
                 <Phone className="w-5 h-5" />
                 اتصل للاستفسار
               </a>
               <Link 
-                href="https://wa.me/966592425757"
+                href="https://wa.me/966592425077"
                 className="bg-green-500 text-white px-6 py-3 rounded-lg font-bold hover:bg-green-600 transition-colors flex items-center gap-2"
               >
                 <MessageCircle className="w-5 h-5" />
@@ -527,14 +527,14 @@ export default function ServicesPage() {
           </div>
           <div className="flex flex-wrap justify-center gap-4">
             <a 
-              href="tel:+966592425757"
+              href="tel:+966592425077"
               className="bg-yellow-400 text-gray-900 px-8 py-4 rounded-xl font-bold text-lg hover:bg-yellow-300 transition-colors flex items-center gap-2"
             >
               <Phone className="w-5 h-5" />
-              اتصل الآن: 966592425757+
+              اتصل الآن: 966592425077+
             </a>
             <Link 
-              href="https://wa.me/966592425757"
+              href="https://wa.me/966592425077"
               className="bg-green-500 text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-green-400 transition-colors flex items-center gap-2"
             >
               <MessageCircle className="w-5 h-5" />

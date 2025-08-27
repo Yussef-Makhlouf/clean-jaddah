@@ -45,7 +45,7 @@ export default function Footer() {
             <h4 className="text-xl font-semibold text-white">معلومات التواصل</h4>
             <div className="space-y-4">
               {[
-                { icon: <Phone className="w-5 h-5" />, text: '0592425757', href: 'tel:0592425757' },
+                { icon: <Phone className="w-5 h-5" />, text: '0592425077', href: 'tel:0592425077' },
                 { icon: <Mail className="w-5 h-5" />, text: 'info@cleanwithfresh.com', href: 'mailto:info@cleanwithfresh.com' },
                 { icon: <MapPin className="w-5 h-5" />, text: 'المدينة، الشارع الرئيسي' }
               ].map((item, index) => (

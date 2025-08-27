@@ -4,8 +4,8 @@ import { MessageCircle, Phone } from 'lucide-react';
 import Link from 'next/link';
 
 export default function FloatingButtons() {
-  const phoneNumber = '0592425757'; 
-  const whatsappNumber = '966592425757'; 
+  const phoneNumber = '0592425077'; 
+  const whatsappNumber = '966592425077'; 
   const message = encodeURIComponent('مرحباً، أود الاستفسار عن خدماتكم');
 
   return (

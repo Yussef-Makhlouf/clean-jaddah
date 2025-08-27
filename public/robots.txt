@@ -9,6 +9,8 @@ Sitemap: https://cleanwithfresh.com/sitemap.xml
 Allow: /
 Allow: /services/
 Allow: /blog/
+Allow: /about/
+Allow: /contact/
 
 # صفحات الخدمات الأساسية - يجب أرشفتها
 Allow: /services/home-cleaning/
@@ -67,12 +69,6 @@ Disallow: /*.xls$
 Disallow: /*.xlsx$
 Disallow: /*.ppt$
 Disallow: /*.pptx$
-
-# منع أرشفة ملفات النظام
-Disallow: /robots.txt
-Disallow: /sitemap.xml
-Disallow: /favicon.ico
-Disallow: /manifest.json
 
 # تأخير الزحف لتجنب إرهاق الخادم
 Crawl-delay: 1
